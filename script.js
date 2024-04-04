@@ -10,7 +10,7 @@ const increament=()=>{
 
 const decreament=()=>{
     Number(Value);
-    if(0 >= Value){
+    if(Value <= 1){
         displayErr();
     }
     else{
