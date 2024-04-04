@@ -72,21 +72,27 @@ body{
     font-size:  20px;
     color: white;
     position: relative;
+    transform: translateY(-100%);
+    animation: movedown 1s ease-in-out forwards;
 
 }
 .error::after{
     content: '';
     position: absolute;
     bottom: -2px;
-    height: 5px;
+    height: 3px;
     left: 50%;
     transform: translateX(-50%);
     background-color: white;
     border-radius: 10px;
-    animation: line 3s linear forwards;
+    animation: line 5s linear forwards;
 }
 
-
+@keyframes movedown {
+    100%{
+        transform: translateY(0);
+    }
+}
 @keyframes line {
     0%{
         width: calc(100% - 20px);
@@ -95,21 +101,3 @@ body{
         width: 0;
     }
 }
-
-/* #error span{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-}
-#error button{
-    font-size: 40px;
-    border: none;
-    color: white;
-    background-color: transparent;
-    text-align: center;
-    justify-content: center;
-} */
-/* #error button:hover{
-    cursor: pointer;
-    color: gray;
-} */
