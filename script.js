@@ -27,6 +27,6 @@ const displayErr = () =>{
 
     setTimeout(()=>{
         Error.remove();
-    },3000);
+    },5000);
 }
 
